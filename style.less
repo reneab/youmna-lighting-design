@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+	background-color: white; 
+	color: black;
+	font-family: 'Open Sans';
+
+	a {
+		text-decoration: none;
+		color: black;
+		&:hover {
+			color:grey;
+			// font-weight: bold;
+			text-decoration: none;
+		}
+	}
+	
+	header {
+		text-align: center;
+		margin-bottom: 2em;
+		// position: sticky;
+		// top: 0;
+		// position: fixed;
+		z-index: 1000;
+		background-color: white;
+		// border-bottom: 1px solid black;
+		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	
+		p {
+			padding: 0.7em 0;
+			margin-bottom: 0;
+			font-size: 1.8em;
+		}
+	
+		nav {
+			margin-bottom: 0.7em;
+			
+			> a {
+				font-size: 1.1em;
+				margin: 0 0.3em;
+			}
+		}
+	}
+
+	main {
+		
+		section {
+			&.row {
+				margin-top: 3em;
+				padding-top: 0.5em;
+				
+				h1, h2, h3, h4 {
+					font-family: 'Raleway';
+					font-weight: bold;
+					margin-bottom: 0;
+					@media (max-width: 576px) {margin-top: 10px;}
+				}
+
+				p {
+					margin-top: 0;
+					font-family: 'Open Sans';
+					font-size: 0.9em;
+				}
+				
+				& img {
+					width: 100%;
+					object-fit: cover;
+					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+					transition: transform .5s ease;
+		
+					&:hover {
+						@media (min-width: 992px) { transform: scale(1.05); }
+					}
+				}
+			}
+			
+		}
+	}
+
+	.right-align {
+		text-align: right;
+	}
+}
+
+
+
+

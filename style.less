@@ -14,6 +14,14 @@ body {
 	background-color: white; 
 	color: black;
 
+	@media (min-width: 992px) {
+		background-image: url('images/night-in-the-city-wallpaper.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+
 	a {
 		text-decoration: none;
 		color: black;
@@ -28,9 +36,9 @@ body {
 		// position: sticky;
 		// top: 0;
 		// z-index: 1000;
-		// background-color: white;
+		background-color: white;
 		// border-bottom: 1px solid black;
-		// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 		
 		.logo {
 			font-family: 'Open Sans';
@@ -41,7 +49,7 @@ body {
 		}
 		
 		nav {
-			margin-top: 1.7em;
+			margin-top: 1.35em;
 			font-family: 'Raleway';
 			font-size: 1.2em;
 			text-align: right;
@@ -53,7 +61,16 @@ body {
 	}
 
 	main {
-		
+		@media (min-width: 992px) {
+			position: relative;
+			top: 100vh;
+		}
+		background-color: white;
+
+		div.container {
+			padding-top: 1px; // just so that the margin on top of the first section applies
+		}
+
 		section {
 			&.row {
 				margin-top: 3em;

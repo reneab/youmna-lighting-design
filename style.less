@@ -94,10 +94,15 @@ body {
 					width: 100%;
 					object-fit: cover;
 					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					transition: transform .5s ease;
-		
-					&:hover {
-						@media (min-width: 992px) { transform: scale(1.05); }
+					
+					@media (min-width: 992px) { 
+						transition: transform .5s ease;
+						filter: grayscale(100%);
+
+						&:hover {
+							transform: scale(1.05);
+							filter: none; 
+						}
 					}
 				}
 			}

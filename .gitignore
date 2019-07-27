@@ -1,2 +1,5 @@
 *.css
 /images
+/.firebase
+.fire*
+fire*

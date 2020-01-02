@@ -74,18 +74,18 @@ body {
     animation: imageAnimation 24s linear infinite 0s;
   }
   body #bg-slideshow > figure:nth-child(1) {
-    background-image: url('images/tiles.jpg');
+    background-image: url('images/tiles-50.jpg');
   }
   body #bg-slideshow > figure:nth-child(2) {
-    background-image: url('images/lights.jpg');
+    background-image: url('images/lights-33.jpg');
     animation-delay: 6s;
   }
   body #bg-slideshow > figure:nth-child(3) {
-    background-image: url('images/photography.jpg');
+    background-image: url('images/photography-25.jpg');
     animation-delay: 12s;
   }
   body #bg-slideshow > figure:nth-child(4) {
-    background-image: url('images/curtains.jpg');
+    background-image: url('images/curtains-25.jpg');
     animation-delay: 18s;
   }
   @keyframes imageAnimation {

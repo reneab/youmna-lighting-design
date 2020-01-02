@@ -49,11 +49,36 @@
 html {
   scroll-behavior: smooth;
 }
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    scroll-padding-top: 140px;
+  }
+}
 body {
   width: 100%;
   margin: 0px;
   background-color: white;
   color: black;
+  background-image: url('images/lights-33.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media (max-width: 992px) {
+  body #bg-slideshow {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   body #bg-slideshow {
@@ -117,6 +142,9 @@ body a:hover {
   text-decoration: none;
 }
 body header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -137,12 +165,22 @@ body header nav > a {
   margin: 0 0.3em;
 }
 body main {
+  position: relative;
   background-color: white;
 }
 @media (min-width: 992px) {
   body main {
-    position: relative;
     top: 100vh;
+  }
+}
+@media (max-width: 992px) {
+  body main {
+    top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  body main {
+    top: 100px;
   }
 }
 body main div.container {

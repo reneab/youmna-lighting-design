@@ -55,19 +55,14 @@
 html {
   scroll-behavior: smooth;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   html {
-    scroll-padding-top: 80px;
-  }
-}
-@media (max-width: 992px) {
-  html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 3em;
   }
 }
 @media (max-width: 576px) {
   html {
-    scroll-padding-top: 140px;
+    scroll-padding-top: 8em;
   }
 }
 body {
@@ -196,10 +191,11 @@ body main {
 body main div.container {
   padding-top: 1px;
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 3000px;
 }
 body main section.row {
-  margin-top: 3em;
-  padding-top: 0.5em;
+  padding: 2em 0;
 }
 body main section.row h1,
 body main section.row h2,

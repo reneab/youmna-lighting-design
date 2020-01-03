@@ -70,7 +70,7 @@ body {
   margin: 0px;
   background-color: white;
   color: black;
-  background-image: url('images/lights-33.jpg');
+  background-image: url('images/curtains-25.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -230,6 +230,16 @@ body main section.row img {
     transform: scale(1.05);
     filter: none;
   }
+}
+body main section.row:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+body main section.row:nth-child(even) a {
+  color: white;
+}
+body main section.row:nth-child(even) a:hover {
+  color: #ffae00;
 }
 body .right-align {
   text-align: right;

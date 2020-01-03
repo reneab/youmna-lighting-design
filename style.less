@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
@@ -30,51 +31,65 @@ body {
 	background-attachment: fixed;
 
 	@media (max-width: 992px) {
-		#bg-slideshow { display: none};
+		#bg-container { display: none};
 	}
 
 	@media (min-width: 992px) {
-		#bg-slideshow {
+		#bg-container {
 			margin: 0;
-			
-			figure {
-				background-size: cover;
-                background-position: 50% 50%;
-                background-repeat: none;
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				z-index: -1;
-                color: transparent;
-				opacity: 0;
-                animation: imageAnimation 24s linear infinite 0s;
-			}
+			display: flex;
 
-			& > figure:nth-child(1) {
-				background-image: url('./images/tiles-50.jpg');
-			}
-			& > figure:nth-child(2) {
-                background-image: url('./images/lights-33.jpg');
-                animation-delay: 6s;
-            }
-            & > figure:nth-child(3) {
-                background-image: url('./images/photography-25.jpg');
-                animation-delay: 12s; 
-            }
-            & > figure:nth-child(4) {
-                background-image: url('./images/curtains-25.jpg');
-                animation-delay: 18s; 
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+
+			.title-over-bg {
+				font-size: 62px;
+				opacity: 70%;
+				font-family: 'Montserrat';
 			}
 			
-			@keyframes imageAnimation { 
-                0% { opacity: 0; animation-timing-function: ease-in; }
-                15% { opacity: 1; animation-timing-function: ease-out; }
-                30% { opacity: 1 }
-                45% { opacity: 0 }
-                100% { opacity: 0 }
-            }
+			#bg-slideshow {
+
+				figure {
+					background-size: cover;
+					background-position: 50% 50%;
+					background-repeat: none;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					z-index: -1;
+					color: transparent;
+					opacity: 0;
+					animation: imageAnimation 24s linear infinite 0s;
+				}
+	
+				& > figure:nth-child(1) {
+					background-image: url('./images/tiles-50.jpg');
+				}
+				& > figure:nth-child(2) {
+					background-image: url('./images/lights-33.jpg');
+					animation-delay: 6s;
+				}
+				& > figure:nth-child(3) {
+					background-image: url('./images/photography-25.jpg');
+					animation-delay: 12s; 
+				}
+				& > figure:nth-child(4) {
+					background-image: url('./images/curtains-25.jpg');
+					animation-delay: 18s; 
+				}
+				
+				@keyframes imageAnimation { 
+					0% { opacity: 0; animation-timing-function: ease-in; }
+					15% { opacity: 1; animation-timing-function: ease-out; }
+					30% { opacity: 1 }
+					45% { opacity: 0 }
+					100% { opacity: 0 }
+				}
+			}
 		}
 	}
 
@@ -97,7 +112,7 @@ body {
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 		
 		.logo {
-			font-family: 'Open Sans';
+			font-family: 'Raleway';
 			padding: 0.5em 0;
 			margin-bottom: 0;
 			font-size: 1.6em;
@@ -118,7 +133,7 @@ body {
 
 	main {
 		position: relative;
-		@media (min-width: 992px) { top: 100vh; }
+		// @media (min-width: 992px) { top: 100vh; }
 		@media (max-width: 992px) { top: 60px };
 		@media (max-width: 576px) { top: 100px };
 		background-color: white;

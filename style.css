@@ -17,6 +17,12 @@
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 100;
@@ -76,15 +82,24 @@ body {
   background-attachment: fixed;
 }
 @media (max-width: 992px) {
-  body #bg-slideshow {
+  body #bg-container {
     display: none;
   }
 }
 @media (min-width: 992px) {
-  body #bg-slideshow {
+  body #bg-container {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
-  body #bg-slideshow figure {
+  body #bg-container .title-over-bg {
+    font-size: 62px;
+    opacity: 70%;
+    font-family: 'Montserrat';
+  }
+  body #bg-container #bg-slideshow figure {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
@@ -98,18 +113,18 @@ body {
     opacity: 0;
     animation: imageAnimation 24s linear infinite 0s;
   }
-  body #bg-slideshow > figure:nth-child(1) {
+  body #bg-container #bg-slideshow > figure:nth-child(1) {
     background-image: url('images/tiles-50.jpg');
   }
-  body #bg-slideshow > figure:nth-child(2) {
+  body #bg-container #bg-slideshow > figure:nth-child(2) {
     background-image: url('images/lights-33.jpg');
     animation-delay: 6s;
   }
-  body #bg-slideshow > figure:nth-child(3) {
+  body #bg-container #bg-slideshow > figure:nth-child(3) {
     background-image: url('images/photography-25.jpg');
     animation-delay: 12s;
   }
-  body #bg-slideshow > figure:nth-child(4) {
+  body #bg-container #bg-slideshow > figure:nth-child(4) {
     background-image: url('images/curtains-25.jpg');
     animation-delay: 18s;
   }
@@ -149,7 +164,7 @@ body header {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 body header .logo {
-  font-family: 'Open Sans';
+  font-family: 'Raleway';
   padding: 0.5em 0;
   margin-bottom: 0;
   font-size: 1.6em;
@@ -167,11 +182,6 @@ body header nav > a {
 body main {
   position: relative;
   background-color: white;
-}
-@media (min-width: 992px) {
-  body main {
-    top: 100vh;
-  }
 }
 @media (max-width: 992px) {
   body main {

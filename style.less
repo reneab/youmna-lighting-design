@@ -6,15 +6,8 @@
 
 html {
 	scroll-behavior: smooth;
-	@media (min-width: 992px) {
-		scroll-padding-top: 80px;
-	}
-	@media (max-width: 992px) {
-		scroll-padding-top: 100px;
-	}
-	@media (max-width: 576px) {
-		scroll-padding-top: 140px;
-	}
+	@media (min-width: 576px) { scroll-padding-top: 3em; }
+	@media (max-width: 576px) { scroll-padding-top: 8em; }
 }
 
 body {
@@ -126,12 +119,13 @@ body {
 		div.container {
 			padding-top: 1px; // just so that the margin on top of the first section applies
 			margin-bottom: 40px;
+			width: 100%;
+    		max-width: 3000px;
 		}
 
 		section {
 			&.row {
-				margin-top: 3em;
-				padding-top: 0.5em;
+				padding: 2em 0;
 				
 				h1, h2, h3, h4 {
 					font-family: 'Raleway';

@@ -82,7 +82,7 @@ body {
   margin: 0px;
   background-color: white;
   color: black;
-  background-image: url('images/curtains-25.jpg');
+  background-image: url('images/curtainsx900-q75.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -121,18 +121,18 @@ body {
     animation: imageAnimation 24s linear infinite 0s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(1) {
-    background-image: url('images/tiles-50.jpg');
+    background-image: url('images/tilesx1080-q75.jpg');
   }
   body #bg-container #bg-slideshow > figure:nth-child(2) {
-    background-image: url('images/lights-33.jpg');
+    background-image: url('images/concretex900-q75.jpg');
     animation-delay: 6s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(3) {
-    background-image: url('images/photography-25.jpg');
+    background-image: url('images/photographyx900-q75.jpg');
     animation-delay: 12s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(4) {
-    background-image: url('images/curtains-25.jpg');
+    background-image: url('images/curtainsx900-q75.jpg');
     animation-delay: 18s;
   }
   @keyframes imageAnimation {

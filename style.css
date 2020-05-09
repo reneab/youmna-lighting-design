@@ -223,7 +223,7 @@ body main section.row img {
 }
 @media (min-width: 992px) {
   body main section.row img {
-    transition: transform 0.5s ease;
+    transition: filter 0.5s ease;
     filter: grayscale(100%);
   }
   body main section.row img:hover {

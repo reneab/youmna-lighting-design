@@ -231,7 +231,7 @@ body main section.row img {
   }
 }
 body main section.row:nth-child(even) {
-  background-color: black;
+  background-color: rgba(8, 8, 8, 0.96);
   color: white;
 }
 body main section.row:nth-child(even) a {

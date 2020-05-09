@@ -227,7 +227,6 @@ body main section.row img {
     filter: grayscale(100%);
   }
   body main section.row img:hover {
-    transform: scale(1.05);
     filter: none;
   }
 }

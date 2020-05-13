@@ -222,6 +222,9 @@ body main section.row:nth-child(even) a {
 body main section.row:nth-child(even) a:hover {
   color: #ffae00;
 }
+body main section.row i {
+  margin-right: 6px;
+}
 body main section.row .section-details {
   padding-top: 10px;
 }

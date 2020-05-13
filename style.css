@@ -134,20 +134,20 @@ body header {
   z-index: 10;
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.8em 0;
 }
 body header .logo {
-  padding: 0.8em 0;
-  margin-bottom: 0;
   float: left;
 }
 body header .logo img {
   height: 38px;
 }
 body header nav {
-  margin-top: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-family: 'Raleway';
   font-size: 1.2em;
-  text-align: right;
 }
 body header nav > a {
   margin: 0 0.3em;

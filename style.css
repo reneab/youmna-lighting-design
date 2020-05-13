@@ -184,6 +184,12 @@ body main section.row h4 {
     margin-top: 10px;
   }
 }
+body main section.row h6 {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 0.96em;
+  margin-bottom: 0;
+}
 body main section.row p {
   font-family: 'Roboto';
   font-weight: 300;
@@ -206,6 +212,9 @@ body main section.row img {
 body main section.row:nth-child(even) {
   background-color: rgba(8, 8, 8, 0.96);
   color: white;
+}
+body main section.row:nth-child(even) p {
+  color: #e6e6e6;
 }
 body main section.row:nth-child(even) a {
   color: white;

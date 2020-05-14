@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 html {
 	scroll-behavior: smooth;
@@ -19,6 +18,11 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+
+	.section-title {
+		font-family: 'Montserrat';
+		font-weight: 300;
+	}
 
 	@media (max-width: 992px) {
 		#bg-container { display: none};
@@ -114,7 +118,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-			font-family: 'Raleway';
+			.section-title();
 			font-size: 1.2em;
 			
 			> a {
@@ -142,14 +146,14 @@ body {
 				padding: 2em 0;
 				
 				h4 {
-					font-family: 'Raleway';
-					font-size: 1.6em;
+					.section-title();
+					font-size: 1.45em;
 					@media (max-width: 576px) {margin-top: 10px;}
 				}
 
 				h6 {
 					font-family: 'Roboto';
-					font-weight: 600;
+					font-weight: 500;
 					font-size: 0.96em;
 					margin-bottom: 0;
 				}

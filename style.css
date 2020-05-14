@@ -1,10 +1,4 @@
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
@@ -23,10 +17,16 @@
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
 }
 html {
   scroll-behavior: smooth;
@@ -51,6 +51,10 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+}
+body .section-title {
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   body #bg-container {
@@ -146,7 +150,8 @@ body header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: 'Raleway';
+  font-family: 'Montserrat';
+  font-weight: 300;
   font-size: 1.2em;
 }
 body header nav > a {
@@ -176,8 +181,9 @@ body main section.row {
   padding: 2em 0;
 }
 body main section.row h4 {
-  font-family: 'Raleway';
-  font-size: 1.6em;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.45em;
 }
 @media (max-width: 576px) {
   body main section.row h4 {
@@ -186,7 +192,7 @@ body main section.row h4 {
 }
 body main section.row h6 {
   font-family: 'Roboto';
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.96em;
   margin-bottom: 0;
 }

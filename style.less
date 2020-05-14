@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,800,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
 
 html {
@@ -105,12 +105,17 @@ body {
 		background-color: white;
 		// border-bottom: 1px solid black;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-		padding: 0.8em 0;
+		padding: 0.5em 0;
 		
 		.logo {
-			float: left;
-			img {
-				height: 38px;
+			> a {
+				font-family:'Roboto';
+				font-weight: 900;
+				font-size: 35px;
+				&:hover {
+					color: initial;
+					text-decoration: none;
+				}
 			}
 		}
 		

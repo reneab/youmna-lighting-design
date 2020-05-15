@@ -28,6 +28,48 @@
   font-weight: 300;
   src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30AXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans Japanese Thin'), local('NotoSansJapanese-Thin'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6ofjtqLzI2JPCgQBnw7HFQojgN8lE.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans Japanese Light'), local('NotoSansJapanese-Light'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F6pfjtqLzI2JPCgQBnw7HFQaioa1Xdj.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v25/-F62fjtqLzI2JPCgQBnw7HFYwQgM.otf) format('opentype');
+}
 html {
   scroll-behavior: smooth;
 }
@@ -53,7 +95,7 @@ body {
   background-attachment: fixed;
 }
 body .section-title {
-  font-family: 'Montserrat';
+  font-family: 'Lato';
   font-weight: 300;
 }
 @media (max-width: 992px) {
@@ -153,7 +195,7 @@ body header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: 'Montserrat';
+  font-family: 'Lato';
   font-weight: 300;
   font-size: 1.2em;
 }
@@ -184,7 +226,7 @@ body main section.row {
   padding: 2em 0;
 }
 body main section.row h4 {
-  font-family: 'Montserrat';
+  font-family: 'Lato';
   font-weight: 300;
   font-size: 1.45em;
 }

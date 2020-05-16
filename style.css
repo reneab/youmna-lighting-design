@@ -88,7 +88,7 @@ body {
   margin: 0px;
   background-color: white;
   color: black;
-  background-image: url('images/curtainsx900-q75.jpg');
+  background-image: url('images/photo-neons-in-the-dark.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -129,36 +129,40 @@ body .section-title {
     z-index: -1;
     color: transparent;
     opacity: 0;
-    animation: imageAnimation 24s linear infinite 0s;
+    animation: imageAnimation 30s linear infinite 0s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(1) {
-    background-image: url('images/tilesx1080-q75.jpg');
+    background-image: url('images/photo-neons-in-the-dark.jpg');
   }
   body #bg-container #bg-slideshow > figure:nth-child(2) {
-    background-image: url('images/concretex900-q75.jpg');
+    background-image: url('images/photo-neons.jpg');
     animation-delay: 6s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(3) {
-    background-image: url('images/photographyx900-q75.jpg');
+    background-image: url('images/photo-gallery.jpg');
     animation-delay: 12s;
   }
   body #bg-container #bg-slideshow > figure:nth-child(4) {
-    background-image: url('images/curtainsx900-q75.jpg');
+    background-image: url('images/photo-tower.jpg');
     animation-delay: 18s;
+  }
+  body #bg-container #bg-slideshow > figure:nth-child(5) {
+    background-image: url('images/concretex900-q75.jpg');
+    animation-delay: 24s;
   }
   @keyframes imageAnimation {
     0% {
       opacity: 0;
       animation-timing-function: ease-in;
     }
-    15% {
+    9% {
       opacity: 1;
       animation-timing-function: ease-out;
     }
-    30% {
+    18% {
       opacity: 1;
     }
-    45% {
+    27% {
       opacity: 0;
     }
     100% {

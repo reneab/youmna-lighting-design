@@ -223,7 +223,7 @@ body main div.container {
   max-width: 3000px;
 }
 body main section.row {
-  padding: 2em 0;
+  padding: 1.7em 0;
 }
 body main section.row h4 {
   font-family: 'Lato';
@@ -277,7 +277,7 @@ body main section.row i {
   margin-right: 6px;
 }
 body main section.row .section-details {
-  padding-top: 10px;
+  padding-top: 0.5em;
 }
 body .right-align {
   text-align: right;

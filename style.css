@@ -101,16 +101,20 @@ body {
 }
 @media (max-width: 768px) {
   body #bg-container {
-    display: hidden;
+    margin: 0;
+    height: 85vh;
+  }
+  body #bg-container #bg-slideshow {
+    display: none;
   }
 }
 @media (min-width: 768px) {
   body #bg-container {
     margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   body #bg-container .title-over-bg {
     font-size: 62px;
@@ -121,7 +125,7 @@ body {
   body #bg-container #bg-slideshow figure {
     background-size: cover;
     background-position: 50% 50%;
-    background-repeat: none;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -221,11 +225,6 @@ body header nav > a {
 body main {
   position: relative;
   background-color: white;
-}
-@media (max-width: 768px) {
-  body main {
-    top: 80vh;
-  }
 }
 body main div.container {
   padding-top: 1px;

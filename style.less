@@ -23,18 +23,23 @@ body {
 	background-attachment: fixed;
 
 	@media (max-width: 768px) {
-		#bg-container { display: hidden};
+		#bg-container { 
+			margin: 0;
+			height: 85vh;
+			#bg-slideshow {
+				display: none;
+			}
+		};
 	}
 
 	@media (min-width: 768px) {
 		#bg-container {
 			margin: 0;
-			display: flex;
-
-			justify-content: center;
-			align-items: center;
 			height: 100vh;
 
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			.title-over-bg {
 				font-size: 62px;
 				opacity: 70%;
@@ -47,7 +52,7 @@ body {
 				figure {
 					background-size: cover;
 					background-position: 50% 50%;
-					background-repeat: none;
+					background-repeat: no-repeat;
 					width: 100%;
 					height: 100%;
 					position: absolute;
@@ -139,7 +144,6 @@ body {
 
 	main {
 		position: relative;
-		@media (max-width: 768px) { top: 80vh }; // to compensate for the fact that there is no BG slideshow
 		background-color: white;
 
 		div.container {

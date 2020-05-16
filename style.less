@@ -7,6 +7,7 @@ html {
 	scroll-behavior: smooth;
 	@media (min-width: 576px) { scroll-padding-top: 3em; }
 	@media (max-width: 576px) { scroll-padding-top: 5em; }
+	@media (max-width: 356px) { scroll-padding-top: 7em; }
 }
 
 body {
@@ -114,6 +115,12 @@ body {
 		padding: 0.5em 0;
 		
 		.logo {
+
+			@media (max-width: 576px) { 
+				display: flex;
+				justify-content: center; 
+			}
+
 			> a {
 				font-family:'Roboto';
 				font-weight: 900;
@@ -128,6 +135,8 @@ body {
 		nav {
 			display: flex;
 			align-items: center;
+			@media (min-width: 576px) { justify-content: flex-end; }
+			@media (max-width: 576px) { justify-content: center; flex-wrap: wrap; }
 			justify-content: flex-end;
 			.section-title();
 			font-size: 1.2em;

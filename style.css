@@ -83,6 +83,11 @@ html {
     scroll-padding-top: 5em;
   }
 }
+@media (max-width: 356px) {
+  html {
+    scroll-padding-top: 7em;
+  }
+}
 body {
   width: 100%;
   margin: 0px;
@@ -186,6 +191,12 @@ body header {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 0.5em 0;
 }
+@media (max-width: 576px) {
+  body header .logo {
+    display: flex;
+    justify-content: center;
+  }
+}
 body header .logo > a {
   font-family: 'Roboto';
   font-weight: 900;
@@ -202,6 +213,17 @@ body header nav {
   font-family: 'Lato';
   font-weight: 300;
   font-size: 1.2em;
+}
+@media (min-width: 576px) {
+  body header nav {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 576px) {
+  body header nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 body header nav > a {
   margin: 0 0.3em;

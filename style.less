@@ -6,7 +6,7 @@
 html {
 	scroll-behavior: smooth;
 	@media (min-width: 576px) { scroll-padding-top: 3em; }
-	@media (max-width: 576px) { scroll-padding-top: 8em; }
+	@media (max-width: 576px) { scroll-padding-top: 5em; }
 }
 
 body {
@@ -26,11 +26,11 @@ body {
 		font-weight: 300;
 	}
 
-	@media (max-width: 992px) {
-		#bg-container { display: none};
+	@media (max-width: 768px) {
+		#bg-container { display: hidden};
 	}
 
-	@media (min-width: 992px) {
+	@media (min-width: 768px) {
 		#bg-container {
 			margin: 0;
 			display: flex;
@@ -140,14 +140,12 @@ body {
 
 	main {
 		position: relative;
-		// @media (min-width: 992px) { top: 100vh; }
-		@media (max-width: 992px) { top: 60px };
-		@media (max-width: 576px) { top: 100px };
+		@media (max-width: 768px) { top: 80vh }; // to compensate for the fact that there is no BG slideshow
 		background-color: white;
 
 		div.container {
 			padding-top: 1px; // just so that the margin on top of the first section applies
-			margin-bottom: 40px;
+			margin-bottom: 3em;
 			width: 100%;
     		max-width: 3000px;
 		}
@@ -159,7 +157,6 @@ body {
 				h4 {
 					.section-title();
 					font-size: 1.45em;
-					@media (max-width: 576px) {margin-top: 10px;}
 				}
 
 				h6 {
@@ -180,7 +177,7 @@ body {
 					object-fit: cover;
 					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 					
-					@media (min-width: 992px) { 
+					@media (min-width: 768px) { 
 						transition: filter .5s ease;
 						filter: grayscale(100%);
 

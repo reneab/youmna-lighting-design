@@ -80,7 +80,7 @@ html {
 }
 @media (max-width: 576px) {
   html {
-    scroll-padding-top: 8em;
+    scroll-padding-top: 5em;
   }
 }
 body {
@@ -98,12 +98,12 @@ body .section-title {
   font-family: 'Lato';
   font-weight: 300;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   body #bg-container {
-    display: none;
+    display: hidden;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body #bg-container {
     margin: 0;
     display: flex;
@@ -210,19 +210,14 @@ body main {
   position: relative;
   background-color: white;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   body main {
-    top: 60px;
-  }
-}
-@media (max-width: 576px) {
-  body main {
-    top: 100px;
+    top: 80vh;
   }
 }
 body main div.container {
   padding-top: 1px;
-  margin-bottom: 40px;
+  margin-bottom: 3em;
   width: 100%;
   max-width: 3000px;
 }
@@ -233,11 +228,6 @@ body main section.row h4 {
   font-family: 'Lato';
   font-weight: 300;
   font-size: 1.45em;
-}
-@media (max-width: 576px) {
-  body main section.row h4 {
-    margin-top: 10px;
-  }
 }
 body main section.row h6 {
   font-family: 'Roboto';
@@ -255,7 +245,7 @@ body main section.row img {
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   body main section.row img {
     transition: filter 0.5s ease;
     filter: grayscale(100%);

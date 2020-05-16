@@ -99,10 +99,6 @@ body {
   background-position: center center;
   background-attachment: fixed;
 }
-body .section-title {
-  font-family: 'Lato';
-  font-weight: 300;
-}
 @media (max-width: 768px) {
   body #bg-container {
     display: hidden;
@@ -204,7 +200,7 @@ body header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   font-weight: 300;
   font-size: 1.2em;
 }
@@ -241,9 +237,9 @@ body main section.row {
   padding: 1.7em 0;
 }
 body main section.row h4 {
-  font-family: 'Lato';
-  font-weight: 300;
-  font-size: 1.45em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.35em;
 }
 body main section.row h6 {
   font-family: 'Roboto';
@@ -287,7 +283,7 @@ body main section.row i {
   margin-right: 6px;
 }
 body main section.row .section-details {
-  padding-top: 0.5em;
+  padding-top: 0.4em;
 }
 body .right-align {
   text-align: right;

@@ -7,7 +7,7 @@ html {
 	scroll-behavior: smooth;
 	@media (min-width: 576px) { scroll-padding-top: 3em; }
 	@media (max-width: 576px) { scroll-padding-top: 5em; }
-	@media (max-width: 356px) { scroll-padding-top: 7em; }
+	// @media (max-width: 356px) { scroll-padding-top: 7em; }
 }
 
 body {
@@ -130,7 +130,12 @@ body {
 			display: flex;
 			align-items: center;
 			@media (min-width: 576px) { justify-content: flex-end; }
-			@media (max-width: 576px) { justify-content: center; flex-wrap: wrap; }
+			@media (max-width: 576px) { 
+				justify-content: center; 
+				flex-wrap: wrap;
+				font-size: 1.1em; }
+			@media (max-width: 356px) { font-size: 4vw;}
+
 			justify-content: flex-end;
 			font-family: 'Roboto';
 			font-weight: 300;

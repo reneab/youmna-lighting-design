@@ -235,22 +235,27 @@ body main div.container {
 }
 body main section.row {
   padding: 1.7em 0;
+  font-family: 'Roboto';
 }
 body main section.row h4 {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.25em;
 }
+body main section.row h5 {
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 2px;
+}
 body main section.row h6 {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 0.96em;
   margin-bottom: 0;
 }
-body main section.row p {
-  font-family: 'Roboto';
+body main section.row p,
+body main section.row li {
   font-weight: 300;
   font-size: 0.88em;
+  color: #171717;
 }
 body main section.row img {
   width: 100%;

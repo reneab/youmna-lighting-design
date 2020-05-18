@@ -172,6 +172,7 @@ body {
 }
 body a {
   text-decoration: none;
+  outline: none;
   color: black;
 }
 body a:hover {
@@ -257,6 +258,13 @@ body main section.row li {
   font-size: 0.88em;
   color: #171717;
 }
+body main section.row ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+body main section.row ul li > p {
+  padding-left: 52px;
+}
 body main section.row img {
   width: 100%;
   object-fit: cover;
@@ -282,7 +290,7 @@ body main section.row:nth-child(even) a {
   color: white;
 }
 body main section.row:nth-child(even) a:hover {
-  color: #ffae00;
+  color: #FFD700;
 }
 body main section.row i {
   margin-right: 6px;

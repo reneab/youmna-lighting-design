@@ -97,6 +97,7 @@ body {
 
 	a {
 		text-decoration: none;
+		outline: none;
 		color: black;
 		&:hover {
 			color:grey;
@@ -186,6 +187,14 @@ body {
 					color: #171717;
 				}
 				
+				ul {
+					list-style-type: none;
+					padding-left: 0;
+					li > p {
+						padding-left: 52px;
+					}
+				}
+
 				& img {
 					width: 100%;
 					object-fit: cover;
@@ -205,9 +214,7 @@ body {
 					background-color: rgba(8, 8, 8, 0.96);
 					color: white;
 
-					p {
-						color: #e6e6e6
-					}
+					p { color: #e6e6e6; }
 
 					a {
 						color: white;

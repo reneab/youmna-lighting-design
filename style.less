@@ -195,6 +195,29 @@ body {
 					}
 				}
 
+				.fa-caret-style {
+					font-family: "Font Awesome 5 Free";
+					display: inline-block;
+					padding: 0 3px;
+					font-weight: 900;
+					font-size: 12px;
+				}
+
+				a[data-toggle="collapse"]{
+					&:not([class]), &.collapsed {
+						&:after {
+							content: "\f105"; // angle-right
+							// content: "\f0da"; // caret-right
+							.fa-caret-style();
+						}
+					}
+					&[class=""]:after {
+						content: "\f107"; // angle-down
+						// content: "\f0d7"; // caret-down
+						.fa-caret-style();
+					}
+				}
+
 				& img {
 					width: 100%;
 					object-fit: cover;
@@ -229,7 +252,7 @@ body {
 				}
 
 				.section-details {
-					padding-top: 0.4em;
+					padding-top: 0.3em;
 				}
 			}
 			

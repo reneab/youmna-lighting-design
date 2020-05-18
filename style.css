@@ -265,6 +265,30 @@ body main section.row ul {
 body main section.row ul li > p {
   padding-left: 52px;
 }
+body main section.row .fa-caret-style {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 900;
+  font-size: 12px;
+}
+body main section.row a[data-toggle="collapse"]:not([class]):after,
+body main section.row a[data-toggle="collapse"].collapsed:after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 900;
+  font-size: 12px;
+}
+body main section.row a[data-toggle="collapse"][class=""]:after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 900;
+  font-size: 12px;
+}
 body main section.row img {
   width: 100%;
   object-fit: cover;
@@ -296,7 +320,7 @@ body main section.row i {
   margin-right: 6px;
 }
 body main section.row .section-details {
-  padding-top: 0.4em;
+  padding-top: 0.3em;
 }
 body .right-align {
   text-align: right;

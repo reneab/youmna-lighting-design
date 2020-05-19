@@ -197,28 +197,22 @@ body header .logo > a:hover {
   text-decoration: none;
 }
 body header nav {
+  font-family: 'Roboto';
+  font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: 'Roboto';
-  font-weight: 300;
   font-size: 1.2em;
-}
-@media (min-width: 576px) {
-  body header nav {
-    justify-content: flex-end;
-  }
 }
 @media (max-width: 576px) {
   body header nav {
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 1.1em;
   }
 }
 @media (max-width: 356px) {
   body header nav {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 body header nav > a {

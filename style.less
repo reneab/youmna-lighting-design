@@ -158,6 +158,14 @@ body {
     		max-width: 3000px;
 		}
 
+		.fa-caret-style {
+			font-family: "Font Awesome 5 Free";
+			display: inline-block;
+			padding: 0 3px;
+			font-weight: 900;
+			font-size: 0.9em;
+		}
+
 		section {
 			&.row {
 				padding: 3% 15%;
@@ -193,14 +201,6 @@ body {
 					li > p {
 						padding-left: 52px;
 					}
-				}
-
-				.fa-caret-style {
-					font-family: "Font Awesome 5 Free";
-					display: inline-block;
-					padding: 0 3px;
-					font-weight: 900;
-					font-size: 12px;
 				}
 
 				a[data-toggle="collapse"]{
@@ -248,8 +248,14 @@ body {
 					}
 				}
 
-				i { // font awesome icons
+				&#contact i.fas { // font awesome icons in contact
 					margin-right: 6px;
+					font-size: 0.8em;
+				}
+
+				a[target="_blank"]:after { // external links
+					content: "\f0da"; // caret-right
+					.fa-caret-style();
 				}
 
 				.section-details {

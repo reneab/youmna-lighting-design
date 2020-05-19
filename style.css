@@ -234,6 +234,13 @@ body main div.container {
   width: 100%;
   max-width: 3000px;
 }
+body main .fa-caret-style {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 900;
+  font-size: 0.9em;
+}
 body main section.row {
   padding: 3% 15%;
   font-family: 'Roboto';
@@ -270,13 +277,6 @@ body main section.row ul {
 body main section.row ul li > p {
   padding-left: 52px;
 }
-body main section.row .fa-caret-style {
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  padding: 0 3px;
-  font-weight: 900;
-  font-size: 12px;
-}
 body main section.row a[data-toggle="collapse"]:not([class]):after,
 body main section.row a[data-toggle="collapse"].collapsed:after {
   content: "\f105";
@@ -284,7 +284,7 @@ body main section.row a[data-toggle="collapse"].collapsed:after {
   display: inline-block;
   padding: 0 3px;
   font-weight: 900;
-  font-size: 12px;
+  font-size: 0.9em;
 }
 body main section.row a[data-toggle="collapse"][class=""]:after {
   content: "\f107";
@@ -292,7 +292,7 @@ body main section.row a[data-toggle="collapse"][class=""]:after {
   display: inline-block;
   padding: 0 3px;
   font-weight: 900;
-  font-size: 12px;
+  font-size: 0.9em;
 }
 body main section.row img {
   width: 100%;
@@ -322,8 +322,17 @@ body main section.row:nth-child(even) a {
 body main section.row:nth-child(even) a:hover {
   color: #FFD700;
 }
-body main section.row i {
+body main section.row#contact i.fas {
   margin-right: 6px;
+  font-size: 0.8em;
+}
+body main section.row a[target="_blank"]:after {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 900;
+  font-size: 0.9em;
 }
 body main section.row .section-details {
   padding-top: 0.3em;

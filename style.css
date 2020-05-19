@@ -75,12 +75,12 @@ html {
 }
 @media (min-width: 576px) {
   html {
-    scroll-padding-top: 3em;
+    scroll-padding-top: 4em;
   }
 }
 @media (max-width: 576px) {
   html {
-    scroll-padding-top: 5em;
+    scroll-padding-top: 6em;
   }
 }
 body {
@@ -235,8 +235,13 @@ body main div.container {
   max-width: 3000px;
 }
 body main section.row {
-  padding: 1.7em 0;
+  padding: 3% 15%;
   font-family: 'Roboto';
+}
+@media (max-width: 576px) {
+  body main section.row {
+    padding: 5% 1%;
+  }
 }
 body main section.row h4 {
   font-weight: 400;
@@ -293,6 +298,7 @@ body main section.row img {
   width: 100%;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
 }
 @media (min-width: 768px) {
   body main section.row img {

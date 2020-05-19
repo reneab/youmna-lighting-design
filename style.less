@@ -5,9 +5,8 @@
 
 html {
 	scroll-behavior: smooth;
-	@media (min-width: 576px) { scroll-padding-top: 3em; }
-	@media (max-width: 576px) { scroll-padding-top: 5em; }
-	// @media (max-width: 356px) { scroll-padding-top: 7em; }
+	@media (min-width: 576px) { scroll-padding-top: 4em; }
+	@media (max-width: 576px) { scroll-padding-top: 6em; }
 }
 
 body {
@@ -161,7 +160,8 @@ body {
 
 		section {
 			&.row {
-				padding: 1.7em 0;
+				padding: 3% 15%;
+				@media (max-width: 576px) { padding: 5% 1%; }
 				font-family: 'Roboto';
 				
 				h4 {
@@ -222,6 +222,7 @@ body {
 					width: 100%;
 					object-fit: cover;
 					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+					margin-bottom: 1em;
 					
 					@media (min-width: 768px) { 
 						transition: filter .5s ease;

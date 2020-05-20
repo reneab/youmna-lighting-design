@@ -145,7 +145,7 @@ body {
 			display: inline-block;
 			padding: 0 3px;
 			font-weight: 900;
-			font-size: 0.9em;
+			font-size: 0.85em;
 		}
 
 		section {
@@ -187,14 +187,14 @@ body {
 				a[data-toggle="collapse"]{
 					&:not([class]), &.collapsed {
 						&:after {
-							content: "\f105"; // angle-right
-							// content: "\f0da"; // caret-right
+							// content: "\f105"; // angle-right
+							content: "\f0da"; // caret-right
 							.fa-caret-style();
 						}
 					}
 					&[class=""]:after {
-						content: "\f107"; // angle-down
-						// content: "\f0d7"; // caret-down
+						// content: "\f107"; // angle-down
+						content: "\f0d7"; // caret-down
 						.fa-caret-style();
 					}
 				}
@@ -234,8 +234,8 @@ body {
 					font-size: 0.8em;
 				}
 
-				a[target="_blank"]:after { // external links
-					content: "\f0da"; // caret-right
+				a.external-link:after { // external links
+					content: "\f35d"; // caret-right
 					.fa-caret-style();
 				}
 

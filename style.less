@@ -135,7 +135,10 @@ body {
 
 		div.container {
 			padding-top: 1px; // just so that the margin on top of the first section applies
-			margin-bottom: 8em;
+			@media (max-width: 576px) {
+				margin-bottom: 10vh;
+			} 
+			margin-bottom: 25vh;
 			width: 100%;
     		max-width: 3000px;
 		}

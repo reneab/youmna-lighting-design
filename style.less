@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,800,900');
 
-@font-face {
-	font-family: 'Letter Gothic Std Bold';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Letter Gothic Std Bold'), url('LetterGothicStd-Bold.woff') format('woff');
-}
-
 html {
 	scroll-behavior: smooth;
 	@media (min-width: 576px) { scroll-padding-top: 3.5em; }
@@ -102,13 +95,12 @@ body {
 		z-index: 10;
 		background-color: white;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-		padding: 5px 0;
+		padding: 0.5em 0;
 
 		.logo {
-			font-family: 'Letter Gothic Std Bold';
-			font-size: 34px;
-			margin-top: 6px;
-			letter-spacing: 2px;
+			font-weight: 400;
+			font-size: 35px;
+			letter-spacing: 3px;
 		}
 		
 		nav {

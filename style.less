@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,800,900');
 
+// colors
+@text-color-light-mode: #171717;
+@text-color-dark-mode: #e6e6e6;
+@my-blue: #2c6793;
+@my-gold: #FFD700;
+
 html {
 	scroll-behavior: smooth;
 	@media (min-width: 576px) { scroll-padding-top: 3.5em; }
@@ -84,7 +90,7 @@ body {
 		outline: none;
 		color: inherit;
 		&:hover {
-			color:#2c6793;
+			color:@my-blue;
 			text-decoration: none;
 		}
 	}
@@ -125,13 +131,11 @@ body {
 	main {
 		position: relative;
 
-		div.container {
-			padding-top: 1px; // just so that the margin on top of the first section applies
+		div.container-fluid {
 			@media (max-width: 576px) {
 				margin-bottom: 10vh;
 			} 
 			margin-bottom: 28vh;
-			width: 100%;
     		max-width: 3000px;
 		}
 
@@ -145,104 +149,102 @@ body {
 
 		section {
 			background-color: white;
-			&.row {
-				@media (max-width: 576px) { padding: 5% 1%; }
-				padding: 2% 15%;
-				
-				h4 {
-					font-weight: 300;
-					font-size: 1.28em;
-				}
-				
-				h5 {
-					font-weight: 400;
-					font-size: 1.05em;
-					margin-bottom: 2px;
-				}
+			@media (max-width: 576px) { padding: 5% 2%; }
+			padding: 2% 15%;
+			
+			h4 {
+				font-weight: 300;
+				font-size: 1.28em;
+			}
+			
+			h5 {
+				font-weight: 400;
+				font-size: 1.05em;
+				margin-bottom: 2px;
+			}
 
-				h6 {
-					font-weight: 500;
-					font-size: 0.96em;
-					margin-bottom: 0;
-				}
+			h6 {
+				font-weight: 500;
+				font-size: 0.96em;
+				margin-bottom: 0;
+			}
 
-				p, li {
-					font-weight: 300;
-					font-size: 0.88em;
-					color: #171717;
+			p, li {
+				font-weight: 300;
+				font-size: 0.88em;
+				color: @text-color-light-mode;
+			}
+			
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+				li > p {
+					padding-left: 52px;
 				}
-				
-				ul {
-					list-style-type: none;
-					padding-left: 0;
-					li > p {
-						padding-left: 52px;
+			}
+
+			&:nth-child(even) {
+				background-color: rgba(8, 8, 8, 0.96);
+				color: white;
+
+				p { color: @text-color-dark-mode }
+
+				a {
+					color: white;
+					&:hover {
+						color: @my-gold;
 					}
 				}
+			}
 
-				a[data-toggle="collapse"]{
-					&:not([class]), &.collapsed {
-						&:after {
-							content: "\f105"; // angle-right
-							// content: "\f0da"; // caret-right
-							.fa-caret-style();
-						}
-					}
-					&[class=""]:after {
-						content: "\f107"; // angle-down
-						// content: "\f0d7"; // caret-down
+			a[data-toggle="collapse"]{
+				&:not([class]), &.collapsed {
+					&:after {
+						content: "\f105"; // angle-right
+						// content: "\f0da"; // caret-right
 						.fa-caret-style();
 					}
 				}
+				&[class=""]:after {
+					content: "\f107"; // angle-down
+					// content: "\f0d7"; // caret-down
+					.fa-caret-style();
+				}
+			}
 
-				img {
-					width: 100%;
-					object-fit: cover;
-					box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-					
-					@media (max-width: 576px) {
-						max-height: 380px;
-						overflow: hidden;
-						margin-bottom: 1em;
-					}
-
-					@media (min-width: 768px) { 
-						transition: filter .5s ease;
-						filter: grayscale(100%);
-
-						&:hover {
-							filter: none; 
-						}
-					}
+			img.section-illustration {
+				width: 100%;
+				object-fit: cover;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+				
+				@media (max-width: 576px) {
+					max-height: 380px;
+					overflow: hidden;
+					margin-bottom: 1em;
 				}
 
-				&:nth-child(even) {
-					background-color: rgba(8, 8, 8, 0.96);
-					color: white;
+				@media (min-width: 768px) { 
+					transition: filter .5s ease;
+					filter: grayscale(100%);
 
-					p { color: #e6e6e6; }
-
-					a {
-						color: white;
-						&:hover {
-							color: #FFD700; // gold
-						}
+					&:hover {
+						filter: none; 
 					}
 				}
+			}
 
-				&#contact i.fas { // font awesome icons in contact
-					margin-right: 6px;
-					font-size: 0.8em;
-				}
+			&#contact i.fas { // font awesome icons in contact
+				margin-right: 6px;
+				font-size: 0.8em;
+			}
 
-				.section-details {
-					padding-top: 0.3em;
-				}
+			.section-details { // to adjust with the main h4 title of the section
+				padding-top: 0.3em;
+			}
 
-				p.copyright {
-					margin-bottom: 0;
-					margin-top: 3em;
-				}
+			p.copyright {
+				margin-bottom: 0;
+				margin-top: 3em;
 			}
 			
 		}

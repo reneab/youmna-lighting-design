@@ -184,7 +184,7 @@ body {
 			}
 
 			&:nth-child(even) {
-				background-color: rgba(8, 8, 8, 0.96);
+				background-color: rgba(8, 8, 8, 0.98);
 				color: white;
 
 				p { color: @text-color-dark-mode }
@@ -233,6 +233,48 @@ body {
 				}
 			}
 
+			.img-gallery {
+				width: 100%;
+				margin: 1em 0;
+
+				.thumbnail {
+					@media (max-width: 576px) { height: 38vh; }
+					height: 200px;
+					padding: 1px;
+					cursor: pointer;
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					overflow: hidden;
+
+					img {
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+
+					div.overlay {
+						position: absolute;
+						opacity: 0;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: flex-end;
+						background-color: rgba(41, 40, 38);
+						width: 100%;
+						height: 100%;
+						padding: 3%;
+						transition: opacity .4s ease;
+						&:hover {
+							opacity: 80%;
+						}
+
+						> p { margin-bottom: 0 }
+					}
+				}
+			}
+
 			&#contact i.fas { // font awesome icons in contact
 				margin-right: 6px;
 				font-size: 0.8em;
@@ -248,6 +290,51 @@ body {
 			}
 			
 		}
+	}
+
+	.modal {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.5s ease;
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.98);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		overflow-y: hidden;
+		
+		.modal-content { /* Modal Content (Image) */
+			@media (max-width: 576px) {
+				max-width: 95%;
+				height: auto;
+				max-height: 85%;
+				width: auto;
+			}
+			width: auto;
+			height: 75%;
+			border: none;
+		}
+		
+		.modal-caption { 
+			text-align: center;
+			color: #ccc;
+			font-size: 0.9em;
+			* { margin-bottom: 0; }
+			h6 { 
+				color: @text-color-dark-mode; 
+				font-size: 1.1em 
+			}
+		}
+	  }
+	  
+	&.modal-opened {
+		overflow-y: hidden;
 	}
 
 }

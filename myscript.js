@@ -14,6 +14,9 @@ $(document).ready(function () {
         const caption = $(this).children('div.overlay').first().html();
         $("#modalImg").attr('src', src);
         $('#modalCaption').html(caption);
+        if (src.includes('terra')) {
+            $('#modalCaption').append($("<p></p>").text("(in collaboration with Luxlab)")); 
+        }
         $("#myModal").css('opacity', 1).css('visibility', 'visible');
         $("body").addClass("modal-opened"); // a class to prevent the body from scrolling when modal is opened
     })

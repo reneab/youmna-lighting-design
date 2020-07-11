@@ -6,10 +6,16 @@
 @my-blue: #2c6793;
 @my-gold: #FFD700;
 
+// media breakpoints
+@small: 576px;
+@medium: 768px;
+@large: 992px;
+
+
 html {
 	scroll-behavior: smooth;
-	@media (min-width: 576px) { scroll-padding-top: 3.5em; }
-	@media (max-width: 576px) { scroll-padding-top: 5.5em; }
+	@media (max-width: @small) { scroll-padding-top: 5.5em };
+	scroll-padding-top: 3.5em;
 }
 
 body {
@@ -27,12 +33,10 @@ body {
 	#bg-container { 
 		margin: 0;
 
-		@media (max-width: 768px) {
-			height: 85vh;
-			#bg-slideshow { display: none; }
-		};
+		height: 85vh;
+		#bg-slideshow { display: none; }
 
-		@media (min-width: 768px) {
+		@media (min-width: @medium) {
 				height: 100vh;
 				
 				#bg-slideshow {
@@ -116,7 +120,7 @@ body {
 			align-items: center;
 			justify-content: flex-end;
 			font-size: 1.2em;
-			@media (max-width: 576px) {
+			@media (max-width: @small) {
 				justify-content: space-between; 
 				font-size: 1.1em;
 			}
@@ -132,7 +136,7 @@ body {
 		position: relative;
 
 		div.container-fluid {
-			@media (max-width: 576px) {
+			@media (max-width: @small) {
 				margin-bottom: 10vh;
 			} 
 			margin-bottom: 28vh;
@@ -149,7 +153,7 @@ body {
 
 		section {
 			background-color: white;
-			@media (max-width: 576px) { padding: 5% 2%; }
+			@media (max-width: @small) { padding: 5% 2%; }
 			padding: 2% 15%;
 			
 			h4 {
@@ -197,33 +201,18 @@ body {
 				}
 			}
 
-			a[data-toggle="collapse"]{
-				&:not([class]), &.collapsed {
-					&:after {
-						content: "\f105"; // angle-right
-						// content: "\f0da"; // caret-right
-						.fa-caret-style();
-					}
-				}
-				&[class=""]:after {
-					content: "\f107"; // angle-down
-					// content: "\f0d7"; // caret-down
-					.fa-caret-style();
-				}
-			}
-
 			img.section-illustration {
 				width: 100%;
 				object-fit: cover;
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 				
-				@media (max-width: 576px) {
+				@media (max-width: @small) {
 					max-height: 380px;
 					overflow: hidden;
 					margin-bottom: 1em;
 				}
 
-				@media (min-width: 768px) { 
+				@media (min-width: @medium) { 
 					transition: filter .5s ease;
 					filter: grayscale(100%);
 
@@ -238,7 +227,7 @@ body {
 				margin: 1em 0;
 
 				.thumbnail {
-					@media (max-width: 576px) { height: 38vh; }
+					@media (max-width: @small) { height: 38vh; }
 					height: 200px;
 					padding: 1px;
 					cursor: pointer;
@@ -310,7 +299,7 @@ body {
 		overflow-y: hidden;
 		
 		.modal-content { /* Modal Content (Image) */
-			@media (max-width: 576px) {
+			@media (max-width: @small) {
 				max-width: 95%;
 				height: auto;
 				max-height: 85%;

@@ -98,6 +98,12 @@ body {
 		}
 	}
 	
+	.logo {
+		font-weight: 400;
+		font-size: 35px;
+		letter-spacing: 3px;
+	}
+
 	header {
 		position: fixed;
 		width: 100%;
@@ -105,12 +111,6 @@ body {
 		background-color: white;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 		padding: 0.5em 0;
-
-		.logo {
-			font-weight: 400;
-			font-size: 35px;
-			letter-spacing: 3px;
-		}
 		
 		nav {
 			font-weight: 300;
@@ -135,10 +135,6 @@ body {
 		position: relative;
 
 		div.container-fluid {
-			@media (max-width: @small) {
-				margin-bottom: 10vh;
-			} 
-			margin-bottom: 28vh;
     		max-width: 3000px;
 		}
 
@@ -279,12 +275,28 @@ body {
 				padding-top: 0.3em;
 			}
 
-			p.copyright {
-				margin-bottom: 0;
-				margin-top: 3em;
+			&.with-fixed-background {
+				height: 300px;
+				background-image: url('/images/projects/terra-6-1500x-q90.jpg');
+				background-attachment: fixed;
+				background-size: unset;
+				background-position-y: center;
+				background-position-x: center;
 			}
 			
+			&.flex-column-all-centered {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			&#footer-banner {
+				color: @text-color-dark-mode;
+				p { font-size: 1em; margin-bottom: 0; }
+			}
 		}
+
 	}
 
 	.modal {

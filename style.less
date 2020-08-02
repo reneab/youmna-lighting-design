@@ -137,6 +137,11 @@ body {
 	main {
 		position: relative;
 
+		&:nth-child(2) { // in case of no background container
+			@media (max-width: @small) { top: 90px };
+			top: 60px;
+		}
+
 		div.container-fluid {
     		max-width: 3000px;
 		}

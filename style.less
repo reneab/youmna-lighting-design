@@ -14,7 +14,6 @@
 
 html {
 	scroll-behavior: smooth;
-	@media (max-width: @small) { scroll-padding-top: 90px };
 	scroll-padding-top: 60px;
 }
 
@@ -119,6 +118,9 @@ body {
 			align-items: center;
 			justify-content: flex-end;
 			font-size: 1.2em;
+			@media screen and (max-width: @small) { 
+				font-size: 1.1em;
+			}
 			
 			> a {
 				margin: 0 0.3em;
@@ -133,7 +135,6 @@ body {
 		position: relative;
 
 		&:nth-child(2) { // in case of no background container
-			@media (max-width: @small) { top: 90px };
 			top: 60px;
 		}
 

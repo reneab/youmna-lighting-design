@@ -158,9 +158,10 @@ body {
 		}
 
 		section {
+			position: relative;
 			background-color: white;
-			@media (max-width: @small) { padding: 5% 2%; }
-			padding: 2% 15%;
+			@media (max-width: @small) { padding: 6% 2%; }
+			padding: 3% 15%;
 			
 			h4 {
 				font-weight: 300;
@@ -180,10 +181,11 @@ body {
 				margin-bottom: 0;
 			}
 
-			p, li {
+			p {
 				font-weight: 300;
 				font-size: 0.88em;
 				color: @text-color-light-mode;
+				&:last-child {margin-bottom: 0;}
 			}
 			
 			ul {
@@ -290,6 +292,18 @@ body {
 
 			&#footer-banner {
 				background-image: url('/images/projects/terra-2-1500x-q90.jpg');
+			}
+
+			&.underlined::after {
+				content: '';
+				width: 80px;
+				height: 2px;
+				background: #6baad9;
+				position: absolute;
+				bottom: 0px;
+				@media (max-width: @small) { left: initial; margin-left: 15px; }
+				left: 15%;
+				margin-left: 10px; 
 			}
 
 		}
